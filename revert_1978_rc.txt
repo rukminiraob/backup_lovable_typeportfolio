@@ -1,0 +1,38 @@
+﻿      <!-- SCANNABLE SUMMARY CARD -->
+      <div class="summary-card bg-light-purple">
+        <div class="summary-grid">
+          <div class="summary-col">
+            <h3 class="summary-title">HiBro</h3>
+            <span class="summary-metric">Outcome: Creative Finisher</span>
+            <span class="summary-label" style="margin-top: 8px;">Time Taken: 2-Month Hackathon</span>
+          </div>
+          <div class="summary-col">
+            <div class="summary-item">
+              <span class="summary-label">The Problem</span>
+              <p class="summary-text">Men struggle to express emotions due to social conditioning, leading to silent suffering.</p>
+            </div>
+          </div>
+          <div class="summary-col">
+            <div class="summary-item">
+              <span class="summary-label">The Solution</span>
+              <p class="summary-text">Private tools to release, reflect, and connect anonymously without fear of judgment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full presentation image -->
+      <div class="proj-image-full hibro-image-wrap">
+        <img src="hibro.jpg" alt="HiBro — Release First. Connect Later. A private emotional wellness app for men. Hackathon presentation showing problem, solution, screens and impact.">
+      </div>
+
+      <div class="proj-body">
+        <div class="proj-col-left">
+          <p class="proj-tagline-quote">"He says I'm fine. But inside, he's drowning."</p>
+          <p class="proj-overview">
+            HiBro is a private emotional wellness app designed for men — to express, release, and heal without fear or judgment. Built during DFC Hackathon 8.0 (Tessaract Frontier), it addresses the silent emotional crisis men face through stress, loneliness, and social pressure to always appear "fine."
+          </p>
+          <div class="proj-feature-list">
+            <div class="hibro-feature">
+              <span class="hibro-
+<truncated 8341 bytes>

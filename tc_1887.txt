@@ -1,0 +1,180 @@
+      <div class="swachh-bento">
+        
+        <!-- Column 1: Context & Meta -->
+        <div class="bento-col bento-col-1">
+          <div class="bento-card bento-intro">
+            <p class="bento-desc">Helping Bengaluru residents feel informed and in control through real-time waste collection tracking.</p>
+            <a href="https://rukminiraob.github.io/Swacha_bengaluru/" target="_blank" class="proj-live-btn teal-live-btn" style="width: fit-content; margin-top: 16px;">
+              View Interactive Prototype <span>â†—</span>
+            </a>
+          </div>
+          
+          <div class="bento-card bento-meta">
+            <div class="bento-meta-grid">
+              <div><span>Role</span><strong>UX Designer</strong></div>
+              <div><span>Duration</span><strong>1 Week Sprint</strong></div>
+              <div><span>Team</span><strong>Solo Designer</strong></div>
+              <div><span>Platform</span><strong>Mobile App</strong></div>
+              <div><span>Domain</span><strong>Civic Tech</strong></div>
+              <div style="grid-column: span 2;"><span>Tools</span><strong>Figma â€¢ FigJam â€¢ Stitch â€¢ GitHub</strong></div>
+              <div style="grid-column: span 2;">
+                <span>Solution Summary</span>
+                <strong>Live truck tracking map, real-time ETAs, and collection history across 11 screens.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Visuals -->
+        <a href="https://rukminiraob.github.io/Swacha_bengaluru/" target="_blank" class="bento-card bento-visuals proj-image-link">
+          <img src="swachh.png" alt="Swachha Bengaluru App Screens">
+          <div class="proj-image-overlay">
+            <span class="proj-image-cta-badge">View Interactive Prototype â†—</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- â”€â”€ CHALLENGE & RESEARCH â”€â”€ -->
+      <div class="cs-design-strategy" style="margin-top: 40px;">
+        <details class="prog-disclosure">
+          <summary class="prog-summary">
+            <span class="prog-summary-text">View Challenge & Research</span>
+            <span class="prog-summary-icon">â†“</span>
+          </summary>
+          <div class="prog-content">
+            <div class="bento-col" style="margin-top: 16px; flex-direction: row; flex-wrap: wrap;">
+              <div class="bento-card bento-challenge-compact" style="flex: 1; min-width: 300px; box-shadow: 0 4px 40px rgba(0,0,0,0.03);">
+                <h3 class="bento-card-title">The Challenge</h3>
+                <p class="bento-subtext">Every morning, residents wait without knowing when garbage will be collected. The real problem isn't waste collectionâ€”it's the lack of visibility and communication.</p>
+                <div class="bento-pain-points">
+                  <div class="bpp-item"><strong>01. Unpredictable Collection:</strong> Never know when the truck will arrive.</div>
+                  <div class="bpp-item"><strong>02. Missed Pickups:</strong> Busy schedules lead to missed disposal.</div>
+                  <div class="bpp-item"><strong>03. Poor Communication:</strong> No timely updates or ways to report issues.</div>
+                </div>
+              </div>
+              <div class="bento-card bento-research-compact" style="flex: 1; min-width: 300px; box-shadow: 0 4px 40px rgba(0,0,0,0.03);">
+                <h3 class="bento-card-title">Research & Insights</h3>
+                <div class="bento-stats-mini">
+                  <div><strong>15</strong> Residents</div>
+                  <div><strong>1 Wk</strong> Research</div>
+                  <div><strong>4</strong> Competitors</div>
+                  <div><strong>3</strong> Insights</div>
+                </div>
+                <div class="bento-insights">
+                  <div class="bi-item"><strong>01.</strong> Residents prioritize reliable 10-minute alerts over live tracking.</div>
+                  <div class="bi-item"><strong>02.</strong> Missed pickups happen due to mismatched dual-income schedules.</div>
+                  <div class="bi-item"><strong>03.</strong> Trust is broken; reporting feels like shouting into a void.</div>
+                </div>
+                <p class="bento-quote-mini">"Users weren't asking for another app. They were asking for predictability."</p>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- â”€â”€ DESIGN STRATEGY â”€â”€ -->
+      <div class="cs-design-strategy">
+        <details class="prog-disclosure">
+          <summary class="prog-summary">
+            <span class="prog-summary-text">View Detailed Design Strategy</span>
+            <span class="prog-summary-icon">â†“</span>
+          </summary>
+          <div class="prog-content">
+            <div class="strategy-matrix" style="margin-top: 16px;">
+              <div class="matrix-header">
+                <div>User Insight</div>
+                <div>Design Decision</div>
+                <div>Expected Impact</div>
+              </div>
+              
+              <div class="matrix-row">
+                <div class="matrix-col">
+                  <p>Residents miss garbage collection because truck arrival times are unpredictable.</p>
+                </div>
+                <div class="matrix-col">
+                  <p>Introduce live truck tracking with estimated arrival times.</p>
+                </div>
+                <div class="matrix-col">
+                  <p>Help residents plan ahead and reduce missed pickups.</p>
+                </div>
+              </div>
+
+              <div class="matrix-row">
+                <div class="matrix-col">
+                  <p>Residents receive no communication about delays or completed collections.</p>
+                </div>
+                <div class="matrix-col">
+                  <p>Provide proactive notifications and collection status updates.</p>
+                </div>
+                <div class="matrix-col">
+                  <p>Increase transparency and build trust in the service.</p>
+                </div>
+              </div>
+
+              <div class="matrix-row">
+                <div class="matrix-col">
+                  <p>Reporting missed collections is confusing and time-consuming.</p>
+                </div>
+                <div class="matrix-col">
+                  <p>Design a simple one-tap issue reporting flow.</p>
+                </div>
+                <div class="matrix-col">
+                  <p>Reduce reporting friction and improve issue resolution.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- â”€â”€ IMPACT & REFLECTION â”€â”€ -->
+      <div class="cs-impact-section">
+        <h3 class="cs-section-title" style="margin-bottom: 24px;">Impact & Reflection</h3>
+        <p style="font-weight: 500; font-size: 1.05rem; color: var(--black); margin-bottom: 16px;"><strong>Outcome:</strong> Improved visibility into waste schedules, reducing resident uncertainty and reporting friction.</p>
+        
+        <details class="prog-disclosure">
+          <summary class="prog-summary">
+            <span class="prog-summary-text">View Outcomes & Learnings</span>
+            <span class="prog-summary-icon">â†“</span>
+          </summary>
+          <div class="prog-content">
+            <div class="cs-impact-dashboard" style="margin-top: 16px;">
+              
+              <!-- Block 1 -->
+              <div class="impact-card">
+                <h4>Project Outcome</h4>
+                <ul class="impact-list">
+                  <li><strong>Research:</strong> Interviewed 15 residents across 3 neighborhoods to map disposal habits.</li>
+                  <li><strong>Design:</strong> Designed 11 high-fidelity mobile app screens covering tracking and reporting flows.</li>
+                  <li><strong>Validation:</strong> Validated through usability testing, reducing task complexity for issue reporting.</li>
+                  <li><strong>Learning:</strong> Reduced uncertainty by prioritizing reliable 10-minute alerts over pure live tracking.</li>
+                </ul>
+              </div>
+
+              <!-- Block 2 -->
+              <div class="impact-card">
+                <h4>Key Learnings</h4>
+                <ul class="impact-list">
+                  <li>Civic problems are often communication problems rather than technology problems.</li>
+                  <li>Designing for trust creates more value than adding more features.</li>
+                  <li>Small moments of certainty can significantly improve everyday experiences.</li>
+                </ul>
+              </div>
+
+              <!-- Block 3 -->
+              <div class="impact-card">
+                <h4>Future Opportunities</h4>
+                <div class="opportunity-chips">
+                  <span>Usability Testing</span>
+                  <span>BBMP Staff Validation</span>
+                  <span>Notification Optimization</span>
+                  <span>Multilingual Accessibility</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </details>
+      </div>
+
+    </div>

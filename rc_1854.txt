@@ -1,0 +1,27 @@
+  <section id="home" class="hero" style="min-height: 80vh; justify-content: center; padding-top: 100px;">
+    <div class="hero-content" style="max-width: 800px; text-align: left; align-items: flex-start; padding: 0 5%;">
+      <h1 class="hero-title" style="font-size: clamp(48px, 6vw, 72px); line-height: 1.1; margin-bottom: 24px; text-align: left;">
+        <span class="hero-line-1">Rukmini Rao</span>
+      </h1>
+      <p class="hero-sub" style="font-size: clamp(1.2rem, 3vw, 1.5rem); color: var(--black); font-weight: 500; margin-bottom: 24px; max-width: 600px; text-align: left;">
+        Simplifying complex systems through research, systems thinking, and intuitive product design.
+      </p>
+      
+      <div class="hero-chips">
+        <span class="chip">UI/UX Design</span>
+        <span class="chip">Systems Thinking</span>
+        <span class="chip">UX Research</span>
+        <span class="chip">Rapid Prototyping</span>
+      </div>
+
+      <div class="hero-actions" style="margin-top: 16px; justify-content: flex-start;">
+        <a href="#work" class="btn-primary" id="hero-work-btn">View Projects</a>
+        <a href="mailto:braorukmini@gmail.com" class="btn-secondary">Contact Me</a>
+      </div>
+      
+      <div class="avail-badge">
+        <span class="avail-dot"></span>
+        Available for UI/UX Designer opportunities
+      </div>
+    </div>
+  </section>

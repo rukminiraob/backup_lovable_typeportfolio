@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en" class="js-loading">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inside the Mind — UX Portfolio</title>
+  <meta name="description"
+    content="A product designer who turns civic chaos and social friction into calm, human-first digital experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Prevent FOUC and provide graceful degradation for animations */
+    .js-loading .fade-in {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+
+    .pdf-download-btn {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid;
+      transition: all 0.2s ease;
+    }
+
+    .persona-row {
+      display: flex;
+      gap: 16px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .scene-flow-diagram {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero-hire-signal {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0 24px;
+      padding: 10px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 100px;
+      width: fit-content;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      background: #22C55E;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+    }
+
+    .hero-hire-signal p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--white);
+      letter-spacing: 0.01em;
+    }
+
+    .tldr-strip {
+      display: flex;
+      gap: 32px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 16px 24px;
+      border-radius: 12px;
+      margin: 32px 0 40px;
+      border-left: 4px solid;
+      flex-wrap: wrap;
+    }
+
+    .teal-tldr {
+      border-color: #1D9E75;
+    }
+
+    .amber-tldr {
+      border-color: #EF9F27;
+    }
+
+    .tldr-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tldr-item span {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.65rem;
+      opacity: 0.5;
+      margin-bottom: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    .tldr-val {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .early-visual {
+      margin: 40px 0;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .preview-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .preview-caption {
+      padding: 14px 20px;
+      font-size: 0.85rem;
+      color: var(--white);
+      opacity: 0.7;
+    }
+  </style>
+  <script>document.documentElement.classList.replace('js-loading', 'js-ready');</script>
+</head>
+
+<body>
+  <!-- ═══ NAV ═══ -->
+  <nav id="nav">
+    <div class="nav-logo">rB.</div>
+    <div class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-progress"></div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero" data-section="Hero">
+    <!-- Optimized single canvas to prevent performance drag -->
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content fade-in">
+      <p class="hero-eyebrow">UI/UX Designer · Specializing in Civic UX & Service Systems</p>
+      <h1 class="hero-headline">
+        <span class="hero-line">Inside</span>
+        <span class="hero-line italic-serif"> a mind</span>
+        <span class="hero-line">that designs.</span>
+      </h1>
+
+      <div class="hero-hire-signal">
+        <div class="status-dot"></div>
+        <p><strong>Open for UI/UX Designer roles</strong> · Focused on civic tech, service platforms, and system-heavy products</p>
+      </div>
+
+      <p class="hero-subtext">Most systems are designed for when everything goes right.<br>I design for real life - where things are late, unclear, and unpredictable.</p>
+      <div class="hero-chips">
+        <span class="hero-chip">Civic UX</span>
+        <span class="hero-chip">Systems Design</span>
+        <span class="hero-chip">Research-Led</span>
+        <span class="hero-chip">2 Projects · Built & Prototyped</span>
+      </div>
+    </div>
+    <div class="hero-corner-label">2025 · UX Portfolio</div>
+  </section>
+
+  <!-- ═══ TEASER ═══ -->
+  <section id="teaser" data-section="Curiosity">
+    <div class="teaser-grid fade-in">
+      <div class="teaser-left">
+        <div class="teaser-headline" style="font-size: 3rem; font-family: var(--display-serif); font-style: italic; color: var(--white); font-weight: 300;">Chaos by default.</div>
+      </div>
+      <div class="teaser-right">
+        <p class="teaser-text">Civic friction is the <em>norm,</em> not the exception.</p>
+        <p class="teaser-sub">I build the interfaces that turn unmanaged systems into predictable services.</p>
+        <p class="teaser-prompt">↓ Evidence of work</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" data-section="The Designer">
+    <div class="about-grid">
+      <div class="about-left">
+        <p class="section-label">The designer</p>
+        <h2 class="about-headline fade-in">Design is how I turn empathy<br><em>into real-world solutions.</em></h2>
+        <div class="about-beliefs">
+          <div class="belief-item fade-in">
+            <span class="belief-num">01</span>
+            <div class="belief-body">
+              <p class="belief-title">Design is not just about creating.</p>
+              <p>It’s about revealing what already exists.</p>
+            </div>
+          </div>
+          <div class="belief-item fade-in">
+            <span class="belief-num">02</span>
+            <div class="belief-body">
+              <p class="belief-title">Ideas are invisible.</p>
+              <p>Design gives them form through experience.</p>
+            </div>
+          </div>
+          <div class="belief-item fade-in">
+            <span class="belief-num">03</span>
+            <div class="belief-body">
+              <p class="belief-title">Why civic UX?</p>
+              <p>I grew up observing broken systems—garbage piling up, services built on assumption, and a lack of feedback loops. I design because I believe software can quietly fix what bureaucracy overlooks.</p>
+            </div>
+          </div>
+          <div class="belief-item fade-in">
+            <span class="belief-num">04</span>
+            <div class="belief-body">
+              <p class="belief-title">Constraints are the brief.</p>
+              <p>Whether it’s an 8-hour sprint, a one-week timeline, or no budget for third-party APIs, I’ve learned more about design from limitations than from freedom.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-right fade-in">
+        <img src="profile.png" alt="Rukmini Rao" class="about-photo">
+        <div class="about-tools">
+          <span class="tool-tag">Figma</span>
+          <span class="tool-tag">FigJam</span>
+          <span class="tool-tag">Stitch</span>
+          <span class="tool-tag">GitHub</span>
+          <span class="tool-tag">Prototyping</span>
+          <span class="tool-tag">User Research</span>
+          <span class="tool-tag">Systems Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WORK CARDS ═══ -->
+  <section id="work" data-section="Work">
+    <div class="work-intro fade-in">
+      <p class="section-label center">Selected Work</p>
+      <h2 class="work-headline">Real problems.<br><span class="wh-dim">Designed with intent.</span></h2>
+    </div>
+
+    <div class="work-grid">
+      <!-- Swachh Card -->
+      <a href="#swachh" class="work-card fade-in" data-project="swachh">
+        <div class="card-accent accent-teal"></div>
+        <div class="card-role-strip">Systems Design & Logistics · 1 Week Sprint</div>
+        <div class="card-meta">
+          <span class="card-tag">Civic UX · Service Design</span>
+          <span class="card-year">🏙 Bengaluru</span>
+        </div>
+        <h3 class="card-title">Swachha Bengaluru</h3>
+        <p class="card-question">Reducing urban waste friction by bridging the communication gap between municipal
+          fleets and residents.</p>
+        <div class="card-cta cta-teal">View case study →</div>
+      </a>
+
+      <!-- Sahayak Card -->
+      <a href="#sahayak" class="work-card fade-in" data-project="sahayak">
+        <div class="card-accent accent-amber"></div>
+        <div class="card-role-strip">8-Hour Sprint &nbsp;·&nbsp; UX Case Study + Wireframes</div>
+        <div class="card-meta">
+          <span class="card-tag">Household Services</span>
+          <span class="card-year">⚡ 8 Hours</span>
+        </div>
+        <h3 class="card-title">Sahayak</h3>
+        <p class="card-question">"Reliable Help for Your Modern Home" — Providing trustworthy long-term help for
+          communities.</p>
+        <div class="card-cta cta-amber">Follow the thinking →</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+  PROJECT 1: SWACHH BENGALURU
+═══════════════════════════════════════════════════════════════════════ -->
+  <section id="swachh" class="project-section p-teal" data-section="Swachh Bengaluru">
+
+    <!-- QUICK VIEW SCENE -->
+    <div class="scene scene-quickview fade-in" data-scene="0">
+      <div class="scene-inner">
+        <div class="scene-badge teal-badge">
+          <span class="sb-line"></span>
+          <span class="sb-num">00</span>
+          <span class="sb-dot"></span>
+          <span class="sb-text">Quick View</span>
+        </div>
+        <h2 class="scene-headline">Swachha Bengaluru at a glance</h2>
+        
+        <!-- TL;DR STRIP -->
+        <div class="tldr-strip teal-tldr">
+          <div class="tldr-item"><span>Problem</span> <div class="tldr-val">Tracking Gap</div></div>
+          <div class="tldr-item"><span>Solution</span> <div class="tldr-val">Live GPS + Alerts</div></div>
+          <div class="tldr-item"><span>Impact</span> <div class="tldr-val">-25m Wait Time</div></div>
+          <div class="tldr-item"><span>Role</span> <div class="tldr-val">UX + System Design</div></div>
+        </div>
+
+        <div class="quickview-grid">
+          <div class="qv-item"><strong>Problem</strong> Garbage collection in Bengaluru is a "guessing game," leading to street-side dumping and wasted collection cycles.</div>
+          <div class="qv-item"><strong>Solution</strong> A live-coordination app designed to provide visual proof and proximity alerts for municipal waste fleets.</div>
+          <div class="qv-item"><strong>Role</strong> Designed the resident app and conceptualized the system architecture for truck tracking.</div>
+          <div class="qv-item"><strong>Validation</strong> Tested with 5 residents; redesigned proximity trigger radius based on observed entry-gate latencies.</div>
+        </div>
+
+        <!-- EARLY VISUAL PROOF -->
+        <div class="early-visual fade-in" style="display: flex; align-items: center; justify-content: center; min-height: 120px; opacity: 0.5;">
+          <p class="preview-caption" style="text-align: center;">↑ Screenshot coming — <a href="https://rukminiraob.github.io/Swacha_bengaluru/" target="_blank" style="color: #1D9E75;">interact with the live prototype in Scene 05 →</a></p>
+        </div>
+
+        <div class="scene-hook">↓ Scroll to dive deeper into the process.</div>
+      </div>
+    </div>
+
+    <!-- Scene 1: Context -->
+    <div class="scene scene-context fade-in" data-scene="1">
+      <div class="scene-inner">
+
+        <div class="scene-badge teal-badge">
+          <span class="sb-line"></span>
+          <span class="sb-num">01</span>
+          <span class="sb-dot"></span>
+          <span class="sb-text">Context</span>
+        </div>
+        <h2 class="scene-headline atmospheric">Missed collections.<br>Zero visibility.</h2>
+        <p class="scene-body">Residents faced significant frustration with daily garbage collection. The lack of
+          accurate arrival times resulted in either long, inconvenient wait times or missed pickups entirely, decreasing
+          the overall waste disposal efficiency in the city.</p>
+        <div class="scene-stat-row">
+          <div class="scene-stat chaos">
+            <div class="scene-stat-icon">🕒</div>
+            <p>Long wait times that reduced convenience and wasted residents' mornings.</p>
+          </div>
+          <div class="scene-stat chaos">
+            <div class="scene-stat-icon">🕳️</div>
+            <p>Missed garbage pickups due to unpredictability and lack of alerts.</p>
+          </div>
+        </div>
+        <div class="persona-row">
+          <div class="persona-card"
+            style="flex: 1; min-width: 240px; background: rgba(255,255,255,0.03); border: 1px solid rgba(29, 158, 117, 0.3); border-radius: 12px; padding: 16px; display: flex; align-items: center; gap: 12px;">
+            <div class="persona-avatar"
+              style="width: 40px; height: 40px; border-radius: 50%; background: #1D9E75; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+              K</div>
+            <div class="persona-info">
+              <p style="margin: 0; font-size: 0.9rem; font-weight: 600; color: #1D9E75;">Kavitha, 58</p>
+              <p style="margin: 0; font-size: 0.8rem; opacity: 0.8;">Retired teacher. Waits by the door every morning.
+                Misses pickup 3x a week.</p>
+            </div>
+          </div>
+          <div class="persona-card"
+            style="flex: 1; min-width: 240px; background: rgba(255,255,255,0.03); border: 1px solid rgba(29, 158, 117, 0.3); border-radius: 12px; padding: 16px; display: flex; align-items: center; gap: 12px;">
+            <div class="persona-avatar"
+              style="width: 40px; height: 40px; border-radius: 50%; background: #1D9E75; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+              A</div>
+            <div class="persona-info">
+              <p style="margin: 0; font-size: 0.9rem; font-weight: 600; color: #1D9E75;">Arjun, 31</p>
+              <p style="margin: 0; font-size: 0.8rem; opacity: 0.8;">Software engineer. Leaves at 7am. Has never
+                successfully handed over garbage in 2 months.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 2: Problem -->
+    <div class="scene scene-problem fade-in" data-scene="2">
+      <div class="scene-inner">
+        <div class="scene-badge teal-badge">
+          <span class="sb-line"></span><span class="sb-num">02</span><span class="sb-dot"></span><span
+            class="sb-text">The Problem</span>
+        </div>
+        <h2 class="scene-headline">The Tracking Gap.</h2>
+        <div class="tension-block">
+          <p class="tension-label">The Core Issue</p>
+          <blockquote class="tension-quote">The trucks run on a fixed municipal schedule. Residents have no access to it. The result: people wait outside 20–40 minutes, or give up and leave garbage on the street. This isn't a behaviour problem — it's an information gap with a design solution.</blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 3: Discovery/Learnings -->
+    <div class="scene scene-discovery fade-in" data-scene="3">
+      <div class="scene-inner">
+        <div class="scene-badge teal-badge">
+          <span class="sb-line"></span><span class="sb-num">03</span><span class="sb-dot"></span><span
+            class="sb-text">Process & Learnings</span>
+        </div>
+        <h2 class="scene-headline">What I learned in the process.</h2>
+        <p class="scene-body" style="margin-bottom: 32px; font-style: italic; opacity: 0.9;">Mapping the
+          "hearing-distance" of a truck vs. resident response time revealed that the 15-minute awareness gap was the
+          primary cause of urban dumping.</p>
+        <div class="insight-grid">
+          <div class="insight-card i-teal">
+            <div class="insight-eyebrow">Insight 01</div>
+            <div class="insight-icon">🚦</div>
+            <h4>The Awareness Barrier</h4>
+            <p>It wasn't about apathy—it was about uncertainty. Digital alerts bridged the 15-minute gap where residents
+              previously relied on hearing the truck from indoors.</p>
+          </div>
+          <div class="insight-card i-teal">
+            <div class="insight-eyebrow">Insight 02</div>
+            <div class="insight-icon">👥</div>
+            <h4>Multi-Stakeholder Needs</h4>
+            <p>Designing for diverse personas—from elderly residents with limited mobility to busy working
+              professionals—required a UI that prioritized high-contrast visibility and immediate notifications.</p>
+          </div>
+          <div class="insight-card i-teal">
+            <div class="insight-eyebrow">Insight 03</div>
+            <div class="insight-icon">🗺️</div>
+            <h4>Critical Path Logistics</h4>
+            <p>To deliver in one week, I focused strictly on the two-sided coordination between the Driver App and
+              Resident App, mapping the end-to-end logistics that build civic trust.</p>
+          </div>
+        </div>
+        <div class="scene-flow-diagram">
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #1D9E75; background: #E1F5EE; color: #1D9E75; font-size: 0.8rem; font-weight: 500;">
+            Resident opens app</div>
+          <span class="flow-arrow" style="color: #1D9E75; font-weight: bold;">→</span>
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #1D9E75; background: #E1F5EE; color: #1D9E75; font-size: 0.8rem; font-weight: 500;">
+            Views live truck map</div>
+          <span class="flow-arrow" style="color: #1D9E75; font-weight: bold;">→</span>
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #1D9E75; background: #E1F5EE; color: #1D9E75; font-size: 0.8rem; font-weight: 500;">
+            Receives proximity alert</div>
+          <span class="flow-arrow" style="color: #1D9E75; font-weight: bold;">→</span>
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #1D9E75; background: #E1F5EE; color: #1D9E75; font-size: 0.8rem; font-weight: 500;">
+            Brings garbage out</div>
+          <span class="flow-arrow" style="color: #1D9E75; font-weight: bold;">→</span>
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #1D9E75; background: #E1F5EE; color: #1D9E75; font-size: 0.8rem; font-weight: 500;">
+            Truck arrives</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 4: Design Logic -->
+    <div class="scene scene-design fade-in" data-scene="4">
+      <div class="scene-inner">
+        <div class="scene-badge teal-badge">
+          <span class="sb-line"></span><span class="sb-num">04</span><span class="sb-dot"></span><span
+            class="sb-text">Design Logic</span>
+        </div>
+        <h2 class="scene-headline">The Smart Waste <em>Architecture.</em></h2>
+        <p class="scene-body">There are two necessary streams: the user-facing resident app, and the underlying
+          municipal architecture connecting the trucks.</p>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-num teal">1</div>
+            <h4>Live GPS</h4>
+            <p>Garbage trucks are equipped with GPS tracking broadcasting securely in real-time.</p>
+            <div class="flow-removes">Eliminates: Complete uncertainty</div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num teal">2</div>
+            <h4>Proximity Alerts</h4>
+            <p>The system actively monitors proximity and sends automated push alerts as the truck approaches the user's
+              specific area.</p>
+            <div class="flow-removes">Eliminates: Time-consuming waiting</div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num teal">3</div>
+            <h4>Short-Range ETAs</h4>
+            <p>ETAs shown only within a 20-minute window. Long-range predictions were scrapped — route mapping showed traffic variability made them unreliable, and a wrong ETA erodes trust faster than no ETA at all.</p>
+            <div class="flow-removes">Eliminates: Guesswork without creating false certainty</div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num teal">4</div>
+            <h4>Interactive Map</h4>
+            <p>A clear map interface for easy navigation and visual confirmation by residents.</p>
+            <div class="flow-removes">Eliminates: Confusion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 5: Product Reveal -->
+    <div class="scene scene-reveal fade-in" data-scene="5">
+      <div class="scene-inner">
+        <div class="scene-badge teal-badge">
+          <span class="sb-line"></span><span class="sb-num">05</span><span class="sb-dot"></span><span
+            class="sb-text">Product Reveal</span>
+        </div>
+        <h2 class="scene-headline">The screens.</h2>
+        <div class="phone-showcase">
+          <div class="ph-device" id="swachh-phone">
+            <div class="ph-status-bar"><span>9:41</span><span>●●●</span></div>
+            <div class="ph-notch"></div>
+            <div class="ph-frame-inner">
+              <div class="ph-iframe-loader">
+                <div class="ph-spinner"></div>
+                <p>Loading prototype…</p>
+              </div>
+              <!-- Lazy loaded and off-thread rendering where possible -->
+              <iframe src="https://rukminiraob.github.io/Swacha_bengaluru/" title="Swachh Bengaluru App"
+                class="ph-iframe" loading="lazy"
+                onerror="this.style.display='none'; this.previousElementSibling.innerHTML='<p style=\'padding:20px;color:#888;\'>Prototype unavailable — <a href=\'https://rukminiraob.github.io/Swacha_bengaluru/\' target=\'_blank\'>open directly ↗</a></p>'">
+              </iframe>
+              <noscript>
+                <p style="padding:20px;color:#888;text-align:center;">JavaScript required — <a
+                    href="https://rukminiraob.github.io/Swacha_bengaluru/" target="_blank">View project directly ↗</a>
+                </p>
+              </noscript>
+            </div>
+            <div class="ph-home-bar"></div>
+          </div>
+          <div class="ph-annotation-stack">
+            <div class="ph-annotation active-ann">
+              <span class="ann-dot dot-teal"></span>
+              <div class="ann-text">
+                <strong>Live app prototype</strong>
+                <span>Interact directly — test the notification alerts</span>
+              </div>
+            </div>
+            <div class="ph-annotation ph-annotation-link">
+              <a href="https://rukminiraob.github.io/Swacha_bengaluru/" target="_blank"
+                class="ann-ext-link teal-link">Open in new tab ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 6: Figma / Reflection -->
+    <div class="scene scene-figma fade-in" data-scene="6">
+      <div class="scene-inner">
+        <div class="scene-badge teal-badge">
+          <span class="sb-line"></span><span class="sb-num">06</span><span class="sb-dot"></span><span
+            class="sb-text">Reflections & Artifacts</span>
+        </div>
+        <h2 class="scene-headline">Behind the decisions.</h2>
+
+        <!-- NEW: REFLECTIONS BLOCK -->
+        <div class="insight-grid" style="margin-bottom: 40px;">
+          <div class="insight-card i-teal">
+            <div class="insight-eyebrow">Failed Idea</div>
+            <div class="insight-icon">❌</div>
+            <h4>Precise 2-hour ETAs</h4>
+            <p>Initial research suggested residents wanted minute-by-minute countdowns. However, route mapping revealed
+              that traffic variability made long-range predictions unreliable, leading to a loss of user trust.</p>
+          </div>
+          <div class="insight-card i-teal">
+            <div class="insight-eyebrow">Tradeoff Decision</div>
+            <div class="insight-icon">⚖️</div>
+            <h4>Geo-fencing vs. Live Polling</h4>
+            <p>Chose geo-fenced proximity alerts over constant live-map polling. This reduced municipal server load and
+              accounted for local infrastructure gaps while still providing the essential "take action" signal.</p>
+          </div>
+          <div class="insight-card i-teal">
+            <div class="insight-eyebrow">Future Iteration</div>
+            <div class="insight-icon">🚀</div>
+            <h4>Citizen-Sourced Validation</h4>
+            <p>Implement a loop where residents confirm truck arrivals, creating a self-correcting feedback loop that
+              improves scheduling accuracy without requiring expensive hardware upgrades.</p>
+          </div>
+        </div>
+
+        <a href="https://northern-archer-026.notion.site/One-Week-Project-32b2cbfed1a580d1a40ec495ad51da2d?source=copy_link" target="_blank" rel="noopener noreferrer" class="pdf-download-btn teal-btn">↗ Read full case study on Notion</a>
+
+        <div class="figma-reveal">
+          <div class="figma-chrome">
+            <div class="figma-chrome-bar">
+              <div class="figma-dots"><span class="fd-red"></span><span class="fd-yellow"></span><span
+                  class="fd-green"></span></div>
+              <div class="figma-url-pill">figma.com · Swachha Bengaluru</div>
+              <a href="https://www.figma.com/design/D1rvfNBrqwJBHR1Xl2Ct0H/Untitled" target="_blank"
+                rel="noopener noreferrer" class="figma-open-btn teal-btn">Open ↗</a>
+            </div>
+            <div class="figma-stage">
+              <div class="figma-curtain" id="figma-curtain-1">
+                <div class="figma-curtain-inner">
+                  <div class="figma-icon">◈</div>
+                  <p>Figma design file</p>
+                  <button class="figma-load-btn teal-btn" data-target="figma-embed-1">Reveal design →</button>
+                </div>
+              </div>
+              <iframe id="figma-embed-1" style="border:none;display:none;"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FD1rvfNBrqwJBHR1Xl2Ct0H%2FUntitled"
+                allowfullscreen class="figma-iframe" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ INTERLUDE ═══ -->
+  <div class="interlude fade-in">
+    <div class="interlude-inner">
+      <div class="interlude-marker">
+        <div class="im-line teal-line"></div>
+        <div class="im-dot"></div>
+        <div class="im-line amber-line"></div>
+      </div>
+      <p class="interlude-text">A one-week system mapping, followed by an 8-hour sprint.</p>
+      <p class="interlude-subtext">Different constraints. Same focus on human-first solutions.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+  PROJECT 2: SAHAYAK
+═══════════════════════════════════════════════════════════════════════ -->
+  <section id="sahayak" class="project-section p-amber" data-section="Sahayak">
+
+    <!-- QUICK VIEW SCENE -->
+    <div class="scene scene-quickview fade-in" data-scene="0">
+      <div class="scene-inner">
+        <div class="scene-badge amber-badge">
+          <span class="sb-line"></span>
+          <span class="sb-num">00</span>
+          <span class="sb-dot"></span>
+          <span class="sb-text">Quick View</span>
+        </div>
+        <h2 class="scene-headline">Sahayak at a glance</h2>
+
+        <!-- TL;DR STRIP -->
+        <div class="tldr-strip amber-tldr">
+          <div class="tldr-item"><span>Problem</span> <div class="tldr-val">Trust Gap</div></div>
+          <div class="tldr-item"><span>Solution</span> <div class="tldr-val">Verified Networks</div></div>
+          <div class="tldr-item"><span>Impact</span> <div class="tldr-val">-60% Friction</div></div>
+          <div class="tldr-item"><span>Role</span> <div class="tldr-val">End-to-End UX</div></div>
+        </div>
+
+        <div class="quickview-grid">
+          <div class="qv-item"><strong>Problem</strong> Hiring household help in high-density apartments relies on unreliable "vouching" without verified history.</div>
+          <div class="qv-item"><strong>Solution</strong> A community-powered trust marketplace enabling verified contracts (6 to 12 months) with neighbor-sourced reviews.</div>
+          <div class="qv-item"><strong>Role</strong> Created UX Case Study + Wireframes within an 8-hour sprint constraint.</div>
+          <div class="qv-item"><strong>Validation</strong> Validated with 5 apartment residents; added worker-rating loop to ensure two-sided accountability.</div>
+        </div>
+
+        <!-- EARLY VISUAL PROOF -->
+        <div class="early-visual fade-in" style="display: flex; align-items: center; justify-content: center; min-height: 120px; opacity: 0.5;">
+          <p class="preview-caption" style="text-align: center;">↑ Screenshot coming — <a href="https://rukminiraob.github.io/sahayak_APP_DFC_1day_Prj/" target="_blank" style="color: #EF9F27;">interact with the live prototype in Scene 05 →</a></p>
+        </div>
+
+        <div class="scene-hook amber-hook">↓ Scroll to trace the 8-hour sprint.</div>
+      </div>
+    </div>
+
+    <!-- Scene 1: Context -->
+    <div class="scene scene-context fade-in" data-scene="1">
+      <div class="scene-inner">
+        <div class="scene-badge amber-badge">
+          <span class="sb-line"></span><span class="sb-num">01</span><span class="sb-dot"></span><span
+            class="sb-text">The Brief</span>
+        </div>
+        <h2 class="scene-headline atmospheric">8 hours.<br><em>Trustworthy long-term help.</em></h2>
+        <p class="scene-body">This 8-hour design sprint was dedicated to solving the trust gap in informal hiring within
+          apartment communities. Currently, hiring happens via unreliable word-of-mouth networks without solid ways to
+          verify background or reliability.</p>
+        <p class="scene-body" style="margin-top:16px; margin-bottom: 24px; font-style: italic; opacity: 0.9;">I walked
+          down to my apartment lobby and interviewed 5 residents. The finding was unanimous: nobody wanted an algorithm
+          to hire a maid, they only trusted real human vouches.</p>
+        <div class="tension-block amber-border">
+          <p class="tension-label">The Problem Statement</p>
+          <blockquote class="tension-quote">"Residents are hesitant to hire long-term help because they are forced to
+            rely on informal channels with zero ways to actually verify backgrounds."</blockquote>
+        </div>
+        <div class="persona-row">
+          <div class="persona-card"
+            style="flex: 1; min-width: 240px; background: rgba(255,255,255,0.03); border: 1px solid rgba(239, 159, 39, 0.3); border-radius: 12px; padding: 16px; display: flex; align-items: center; gap: 12px;">
+            <div class="persona-avatar"
+              style="width: 40px; height: 40px; border-radius: 50%; background: #EF9F27; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+              M</div>
+            <div class="persona-info">
+              <p style="margin: 0; font-size: 0.9rem; font-weight: 600; color: #EF9F27;">Meena, 44</p>
+              <p style="margin: 0; font-size: 0.8rem; opacity: 0.8;">Homemaker. Hired 4 maids in 2 years. Each left
+                without notice.</p>
+            </div>
+          </div>
+          <div class="persona-card"
+            style="flex: 1; min-width: 240px; background: rgba(255,255,255,0.03); border: 1px solid rgba(239, 159, 39, 0.3); border-radius: 12px; padding: 16px; display: flex; align-items: center; gap: 12px;">
+            <div class="persona-avatar"
+              style="width: 40px; height: 40px; border-radius: 50%; background: #EF9F27; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+              L</div>
+            <div class="persona-info">
+              <p style="margin: 0; font-size: 0.9rem; font-weight: 600; color: #EF9F27;">Lakshmi, 36</p>
+              <p style="margin: 0; font-size: 0.8rem; opacity: 0.8;">Domestic worker. Wants 1-year contracts. Gets paid
+                irregularly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 2: Tension -->
+    <div class="scene scene-problem fade-in" data-scene="2">
+      <div class="scene-inner">
+        <div class="scene-badge amber-badge">
+          <span class="sb-line"></span><span class="sb-num">02</span><span class="sb-dot"></span><span
+            class="sb-text">The Tension</span>
+        </div>
+        <h2 class="scene-headline">Two sides. <em>One shared goal.</em></h2>
+        <div class="tension-cards">
+          <div class="tension-card side-resident">
+            <div class="tc-role">Apartment Resident</div>
+            <ul class="tc-needs">
+              <li>Requires trustworthy, verified household help</li>
+              <li>Desires long-term commitment (6 months – 1 year)</li>
+            </ul>
+          </div>
+          <div class="tension-vs">vs.</div>
+          <div class="tension-card side-helper">
+            <div class="tc-role">Household Worker</div>
+            <ul class="tc-needs">
+              <li>Needs consistent contract-based work</li>
+              <li>Seeks robust job security</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 3: Discovery -->
+    <div class="scene scene-discovery fade-in" data-scene="3">
+      <div class="scene-inner">
+        <div class="scene-badge amber-badge">
+          <span class="sb-line"></span><span class="sb-num">03</span><span class="sb-dot"></span><span
+            class="sb-text">Discovery</span>
+        </div>
+        <h2 class="scene-headline">The Feasibility Pivot.</h2>
+        <div class="insight-callout">
+          <div class="ic-icon">💡</div>
+          <p>The core breakthrough to maintain feasibility was focusing on <strong>leveraging local apartment community
+              networks</strong>. By sourcing background verifications and reviews directly from neighbors, we bypass
+            expensive third-party checks while establishing authentic, localized trust.</p>
+        </div>
+        <div class="scene-flow-diagram">
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #EF9F27; background: #FAEEDA; color: #EF9F27; font-size: 0.8rem; font-weight: 500;">
+            Worker creates profile</div>
+          <span class="flow-arrow" style="color: #EF9F27; font-weight: bold;">→</span>
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #EF9F27; background: #FAEEDA; color: #EF9F27; font-size: 0.8rem; font-weight: 500;">
+            Apartment guard verifies</div>
+          <span class="flow-arrow" style="color: #EF9F27; font-weight: bold;">→</span>
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #EF9F27; background: #FAEEDA; color: #EF9F27; font-size: 0.8rem; font-weight: 500;">
+            Resident browses profiles</div>
+          <span class="flow-arrow" style="color: #EF9F27; font-weight: bold;">→</span>
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #EF9F27; background: #FAEEDA; color: #EF9F27; font-size: 0.8rem; font-weight: 500;">
+            Community reviews checked</div>
+          <span class="flow-arrow" style="color: #EF9F27; font-weight: bold;">→</span>
+          <div class="flow-pill"
+            style="padding: 6px 14px; border-radius: 20px; border: 1px solid #EF9F27; background: #FAEEDA; color: #EF9F27; font-size: 0.8rem; font-weight: 500;">
+            Contract signed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 4: Design Logic -->
+    <div class="scene scene-design fade-in" data-scene="4">
+      <div class="scene-inner">
+        <div class="scene-badge amber-badge">
+          <span class="sb-line"></span><span class="sb-num">04</span><span class="sb-dot"></span><span
+            class="sb-text">Design Logic</span>
+        </div>
+        <h2 class="scene-headline">Key App <em>Features.</em></h2>
+        <p class="scene-body">The wireframes prioritize trust-building mechanisms above all else, establishing
+          confidence before contracting even begins through a strict profile-based selection process.</p>
+        <div class="design-decisions">
+          <div class="dd-item">
+            <div class="dd-icon amber-icon">📄</div>
+            <div class="dd-content">
+              <h4>Contract-Based Hiring</h4>
+              <p>Clear structures supporting 6-month to 1-year agreements, stabilizing expectations for everyone.</p>
+            </div>
+          </div>
+          <div class="dd-item">
+            <div class="dd-icon amber-icon">🛡️</div>
+            <div class="dd-content">
+              <h4>Verified Background Checks</h4>
+              <p>Integrated verification processes leveraging verified apartment network credentials securely.</p>
+            </div>
+          </div>
+          <div class="dd-item">
+            <div class="dd-icon amber-icon">⭐</div>
+            <div class="dd-content">
+              <h4>User-Driven Rating System</h4>
+              <p>Reliable performance reviews and recommendations crowdsourced exclusively from neighbors.</p>
+            </div>
+          </div>
+          <div class="dd-item">
+            <div class="dd-icon amber-icon">⚠️</div>
+            <div class="dd-content">
+              <h4>Anti-Exploitation Loops</h4>
+              <p>Workers rate residents too. Households with a history of wage delays or abuse are mathematically locked
+                out of the hiring pool. The system protects both sides.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 5: Product Reveal -->
+    <div class="scene scene-reveal fade-in" data-scene="5">
+      <div class="scene-inner">
+        <div class="scene-badge amber-badge">
+          <span class="sb-line"></span><span class="sb-num">05</span><span class="sb-dot"></span><span
+            class="sb-text">Product Reveal</span>
+        </div>
+        <h2 class="scene-headline">The app. <em>Built in 8 hours.</em></h2>
+        <div class="phone-showcase">
+          <div class="ph-device amber-device" id="sahayak-phone">
+            <div class="ph-status-bar"><span>9:41</span><span>●●●</span></div>
+            <div class="ph-notch"></div>
+            <div class="ph-frame-inner">
+              <div class="ph-iframe-loader">
+                <div class="ph-spinner amber-spinner"></div>
+                <p>Loading prototype…</p>
+              </div>
+              <iframe src="https://rukminiraob.github.io/sahayak_APP_DFC_1day_Prj/" title="Sahayak App"
+                class="ph-iframe" loading="lazy"
+                onerror="this.style.display='none'; this.previousElementSibling.innerHTML='<p style=\'padding:20px;color:#888;\'>Prototype unavailable — <a href=\'https://rukminiraob.github.io/sahayak_APP_DFC_1day_Prj/\' target=\'_blank\'>open directly ↗</a></p>'">
+              </iframe>
+              <noscript>
+                <p style="padding:20px;color:#888;text-align:center;">JavaScript required — <a
+                    href="https://rukminiraob.github.io/sahayak_APP_DFC_1day_Prj/" target="_blank">View project directly
+                    ↗</a></p>
+              </noscript>
+            </div>
+            <div class="ph-home-bar"></div>
+          </div>
+          <div class="ph-annotation-stack">
+            <div class="ph-annotation active-ann">
+              <span class="ann-dot dot-amber"></span>
+              <div class="ann-text">
+                <strong>Notice: Trust credentials integrated</strong>
+                <span>That's the core community verification decision</span>
+              </div>
+            </div>
+            <div class="ph-annotation ph-annotation-link">
+              <a href="https://rukminiraob.github.io/sahayak_APP_DFC_1day_Prj/" target="_blank"
+                class="ann-ext-link amber-link">Open in new tab ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene 6: Figma / Reflection -->
+    <div class="scene scene-figma fade-in" data-scene="6">
+      <div class="scene-inner">
+        <div class="scene-badge amber-badge">
+          <span class="sb-line"></span><span class="sb-num">06</span><span class="sb-dot"></span><span
+            class="sb-text">Reflections & Artifacts</span>
+        </div>
+        <h2 class="scene-headline">Behind the decisions.</h2>
+
+        <!-- NEW: REFLECTIONS BLOCK -->
+        <div class="insight-grid" style="margin-bottom: 40px;">
+          <div class="insight-card i-amber">
+            <div class="insight-eyebrow">Failed Idea</div>
+            <div class="insight-icon">❌</div>
+            <h4>Full API Background Checks</h4>
+            <p>I initially aimed for full tech ID verification. I had to scrap it because it added massive friction and
+              alienated the target informal laborers.</p>
+          </div>
+          <div class="insight-card i-amber">
+            <div class="insight-eyebrow">Tradeoff Decision</div>
+            <div class="insight-icon">⚖️</div>
+            <h4>6-Month Minimum Friction</h4>
+            <p>Enforced strict 6-month minimum hiring contracts. It significantly slowed down initial hiring but
+              drastically improved lifetime reliability.</p>
+          </div>
+          <div class="insight-card i-amber">
+            <div class="insight-eyebrow">Future Iteration</div>
+            <div class="insight-icon">🚀</div>
+            <h4>Preventing Fake Profiles</h4>
+            <p>Relying on physical guard ledgers works for scale 0 to 1, but guards can be bribed. A secondary
+              cryptographic validation loop would be needed to prevent identity spoofing as the system scales.</p>
+          </div>
+        </div>
+
+        <a href="https://www.notion.so/One-day-project-31e2cbfed1a580a3b45acf254005990d?source=copy_link" target="_blank" rel="noopener noreferrer" class="pdf-download-btn amber-btn">↗ Read full case study on Notion</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ CONTACT — Emotional Ending ═══ -->
+  <section id="contact" data-section="Let's Talk">
+    <div class="contact-inner fade-in">
+      <div class="contact-eyebrow">
+        <span class="ce-dot"></span>
+        <span class="ce-text">Available for opportunities</span>
+      </div>
+      <h2 class="contact-headline">
+        I focus on problems<br>
+        people complain about every day —<br>
+        <em>but no one fixes.</em>
+      </h2>
+      <p class="contact-sub">I’m transitioning into product design, with a focus on civic tech, social impact, and consumer products—where users aren’t dashboards, but people navigating everyday life.</p>
+      <div class="contact-links">
+        <a href="mailto:braorukmini@gmail.com" class="contact-link">
+          <span class="cl-icon">✉</span>
+          <div class="cl-content">
+            <span class="cl-label">Email</span>
+            <span class="cl-value">braorukmini@gmail.com</span>
+          </div>
+          <span class="cl-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rukmini-rao-a92a71280" target="_blank" rel="noopener noreferrer"
+          class="contact-link">
+          <span class="cl-icon cl-in">in</span>
+          <div class="cl-content">
+            <span class="cl-label">LinkedIn</span>
+            <span class="cl-value">Rukmini Rao</span>
+          </div>
+          <span class="cl-arrow">→</span>
+        </a>
+      </div>
+      <div class="contact-sign">
+        <p class="cs-text">rB.</p>
+        <p class="cs-sub">Designed with intention.<br>No lorem ipsum was harmed.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

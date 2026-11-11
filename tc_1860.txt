@@ -1,0 +1,20 @@
+      <div class="about-left">
+        <h2 class="about-title">
+          I'm curious about people, fascinated by how things work, and always looking for <em>a simpler way.</em>
+        </h2>
+        <p class="about-bio">
+          I'm a <strong>UI/UX Designer with a background in software engineering</strong>, combining systems thinking with
+          human-centered design to turn complex problems into clear, intuitive experiences.
+        </p>
+        <p class="about-bio">
+          I enjoy understanding the <em>why</em> behind a problem, exploring possibilities, and designing experiences
+          that feel natural to use.
+        </p>
+        <div class="about-expertise">
+          <span class="expertise-tag">UX Research</span>
+          <span class="expertise-tag">Interaction Design</span>
+          <span class="expertise-tag">Visual Design</span>
+          <span class="expertise-tag">Prototyping</span>
+          <span class="expertise-tag">Design Systems</span>
+        </div>
+      </div>
