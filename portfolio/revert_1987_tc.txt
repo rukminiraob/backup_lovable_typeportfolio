@@ -1,0 +1,1 @@
+﻿"              <div class=\"cert-text\">\n                <strong style=\"font-size: 1.1rem;\">ACHIEVEMENT AWARD</strong>\n                <p style=\"font-size: 0.95rem; color: var(--gray-500); margin-top: 4px; line-height: 1.5;\">Hackathon 9.0: Recognized for out-of-the-box thinking.</p>\n              </div>"

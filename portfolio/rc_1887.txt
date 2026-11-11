@@ -1,0 +1,86 @@
+      <!-- LEVEL 1: Summary Card + Visuals -->
+      <div class="level-1-summary">
+        <div>
+          <div class="summary-meta">
+            <div class="meta-item"><span class="meta-label">Role</span><span style="font-size: 0.9rem; font-weight: 500;">UX Designer</span></div>
+            <div class="meta-item"><span class="meta-label">Timeline</span><span style="font-size: 0.9rem; font-weight: 500;">1 Wk Sprint</span></div>
+            <div class="meta-item"><span class="meta-label">Platform</span><span style="font-size: 0.9rem; font-weight: 500;">Mobile App</span></div>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div>
+              <span class="meta-label" style="color: var(--teal);">Problem</span>
+              <p style="font-size: 0.95rem; margin: 4px 0 0 0;">Residents miss unpredictable garbage trucks due to lack of tracking.</p>
+            </div>
+            <div>
+              <span class="meta-label" style="color: var(--teal);">Solution</span>
+              <p style="font-size: 0.95rem; margin: 4px 0 0 0;">Live truck tracking and one-tap issue reporting.</p>
+            </div>
+            <div>
+              <span class="meta-label" style="color: var(--teal);">Contributions</span>
+              <ul style="font-size: 0.95rem; margin: 4px 0 0 0; padding-left: 20px; color: var(--gray-600);">
+                <li>Interviewed 15 residents.</li>
+                <li>Designed 11 app screens.</li>
+                <li>Validated via usability testing.</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://rukminiraob.github.io/Swacha_bengaluru/" target="_blank" class="proj-live-btn teal-live-btn" style="width: fit-content; margin-top: 24px;">
+            View Prototype <span>â†—</span>
+          </a>
+        </div>
+        
+        <a href="https://rukminiraob.github.io/Swacha_bengaluru/" target="_blank" class="proj-image-link" style="border-radius: 12px; overflow: hidden; display: block; background: var(--gray-100);">
+          <img src="swachh.png" alt="Swachha Bengaluru App Screens" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+      </div>
+
+      <!-- LEVEL 2: Research & Strategy -->
+      <details class="prog-disclosure" style="margin-bottom: 16px;">
+        <summary class="prog-summary"><span class="prog-summary-text">View Research & Strategy (Level 2)</span><span class="prog-summary-icon">â†“</span></summary>
+        <div class="prog-content">
+          <div class="matrix-cards">
+            <div class="matrix-card">
+              <span class="mc-step"><strong>Insight:</strong> Unpredictable trucks.</span>
+              <span class="mc-step"><strong>Decision:</strong> Live map tracking.</span>
+              <span class="mc-step"><strong>Impact:</strong> Better planning.</span>
+            </div>
+            <div class="matrix-card">
+              <span class="mc-step"><strong>Insight:</strong> No communication.</span>
+              <span class="mc-step"><strong>Decision:</strong> Push notifications.</span>
+              <span class="mc-step"><strong>Impact:</strong> Increased trust.</span>
+            </div>
+            <div class="matrix-card">
+              <span class="mc-step"><strong>Insight:</strong> Hard to report.</span>
+              <span class="mc-step"><strong>Decision:</strong> One-tap flow.</span>
+              <span class="mc-step"><strong>Impact:</strong> Reduced friction.</span>
+            </div>
+          </div>
+        </div>
+      </details>
+      
+      <!-- LEVEL 3: Impact & Learnings -->
+      <details class="prog-disclosure">
+        <summary class="prog-summary"><span class="prog-summary-text">View Impact & Learnings (Level 3)</span><span class="prog-summary-icon">â†“</span></summary>
+        <div class="prog-content">
+          <div class="outcome-cards">
+            <div class="mini-card" style="padding: 16px;">
+              <span class="mini-card-label">Research</span>
+              <p style="font-size: 0.9rem; margin:0;">15 interviews.</p>
+            </div>
+            <div class="mini-card" style="padding: 16px;">
+              <span class="mini-card-label">Design</span>
+              <p style="font-size: 0.9rem; margin:0;">11 screens.</p>
+            </div>
+            <div class="mini-card" style="padding: 16px;">
+              <span class="mini-card-label">Validation</span>
+              <p style="font-size: 0.9rem; margin:0;">Tested with 5 users.</p>
+            </div>
+            <div class="mini-card" style="padding: 16px;">
+              <span class="mini-card-label">Learning</span>
+              <p style="font-size: 0.9rem; margin:0;">Certainty > Features.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>

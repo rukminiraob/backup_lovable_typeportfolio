@@ -1,0 +1,35 @@
+﻿          <div class="teardown-block">
+            <span class="teardown-label">Observation</span>
+            <p>Users successfully book a slot via the app, but arrive at the gym to find it overcrowded with no available machines or floor space.</p>
+          </div>
+
+          <div class="teardown-block">
+            <span class="teardown-label">User Problem</span>
+            <p>Gym-goers waste time waiting for equipment, disrupting their workout flow and creating a frustrating, unpredictable offline experience.</p>
+          </div>
+
+          <details class="prog-disclosure" style="margin-top: 24px;">
+            <summary class="prog-summary">
+              <span class="prog-summary-text">View Detailed Product Breakdown</span>
+              <span class="prog-summary-icon">↓</span>
+            </summary>
+            <div class="prog-content">
+              <div class="teardown-block" style="margin-top: 16px;">
+                <span class="teardown-label">Why Existing Experience Fails</span>
+                <p>The app optimizes for digital booking limits but ignores the physical capacity constraints and real-time occupancy of the facility.</p>
+              </div>
+
+              <div class="teardown-block">
+                <span class="teardown-label">Opportunity</span>
+                <p>Bridge the gap between digital booking and physical reality by surfacing real-time gym conditions to users before they leave home.</p>
+              </div>
+
+              <div class="teardown-block">
+                <span class="teardown-label">Product Thinking</span>
+                <p>Leverage existing user check-in data to calculate live crowd density. Shift the app's role from a simple booking utility to a proactive habit-enabler.</p>
+              </div>
+
+              <div class="teardown-block">
+                <span class="teardown-label">Potential MVP</span>
+                <p>Display a simple "Live Crowd Level" indicator (Low/Medium/High) on th
+<truncated 736 bytes>

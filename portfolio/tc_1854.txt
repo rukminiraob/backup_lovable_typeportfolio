@@ -1,0 +1,23 @@
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="status-dot"></span>
+        <span>Open to UI/UX Designer opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-line-1">Rukmini Rao</span>
+      </h1>
+      <p class="hero-sub">
+        Designing products that simplify complex real-world systems through research, systems thinking, and intuitive user experiences.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary" id="hero-work-btn">View Projects</a>
+        <a href="#about" class="btn-secondary" id="hero-about-btn">About Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>

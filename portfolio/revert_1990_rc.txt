@@ -1,0 +1,4 @@
+﻿      <h2 class="contact-title">Let's Build Better Products</h2>
+      <p class="contact-sub">
+        I'm a UI/UX Designer with a software engineering background. I specialize in turning complex systemic problems into intuitive, user-centered interfaces. If you're building a product that requires deep research and technical empathy, let's talk.
+      </p>

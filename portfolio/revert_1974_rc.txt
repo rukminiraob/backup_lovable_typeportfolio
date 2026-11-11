@@ -1,0 +1,29 @@
+﻿      <!-- Screens showcase — click to open live app -->
+      <a href="https://rukminiraob.github.io/sahayak_APP_DFC_1day_Prj/" target="_blank" class="proj-image-full proj-image-link" id="sahayak-screens-link">
+        <div class="proj-screens-bg sahayak-screens-bg">
+          <img src="sahayak.png" alt="Sahayak — 7 app screens: Onboarding & Discovery, Home Dashboard, Profile Details, Trial Booking, Trial Confirmation, Contract Management, Ongoing Management, Exit Page">
+        </div>
+        <div class="proj-image-overlay sahayak-overlay">
+          <span class="proj-image-cta-badge amber-badge">Click to open live app ↗</span>
+        </div>
+      </a>
+
+      <div class="proj-body">
+        <div class="proj-col-left">
+          <p class="proj-overview">
+            "Reliable Help for Your Modern Home" — a trust-first domestic services platform that connects urban families with verified helpers. Designed in an intense 1-day design sprint with full UX documentation.
+          </p>
+          <p class="proj-screens-note">↑ 8 screens shown above — Onboarding & Discovery · Home Dashboard · Profile Details · Trial Booking · Trial Confirmation · Contract Management · Ongoing Management · Exit Page</p>
+          <div class="proj-links">
+            <a href="https://rukminiraob.github.io/sahayak_APP_DFC_1day_Prj/" target="_blank" class="proj-link-btn amber-btn" id="sahayak-prototype-btn">Open Live App ↗</a>
+          </div>
+        </div>
+        <div class="proj-col-right">
+          <div class="proj-detail-row">
+            <span class="proj-detail-label">Problem</span>
+            <span class="proj-detail-val">No reliable way to find or manage domestic help in Indian urban homes.</span>
+          </div>
+          <div class="proj-detail-row">
+            <span class="proj-detail-label">Solution</span>
+            <span class="proj-detail-val">A trust-first platform built around verification, trial bookings, and transp
+<truncated 6763 bytes>

@@ -1,0 +1,50 @@
+    <div class="skills-grid">
+      <div class="skill-card" id="skill-design">
+        <div class="skill-icon">â—Ž</div>
+        <h3 class="skill-name">Research & Discovery</h3>
+        <p class="skill-desc">Uncovering the "why" behind user behaviors to ensure we're solving the right problems before building solutions.</p>
+        <div class="skill-tags">
+          <span>User Interviews</span><span>Behavioral Analysis</span><span>Empathy Mapping</span>
+        </div>
+      </div>
+      <div class="skill-card" id="skill-ux">
+        <div class="skill-icon">âœ¦</div>
+        <h3 class="skill-name">Interaction & Visual Design</h3>
+        <p class="skill-desc">Crafting intuitive, accessible interfaces where form follows function to reduce cognitive load.</p>
+        <div class="skill-tags">
+          <span>UI Architecture</span><span>Accessibility</span><span>Visual Hierarchy</span>
+        </div>
+      </div>
+      <div class="skill-card" id="skill-systems">
+        <div class="skill-icon">â¬¡</div>
+        <h3 class="skill-name">Systems Thinking</h3>
+        <p class="skill-desc">Designing for scale and consistency, understanding how individual touchpoints affect the broader ecosystem.</p>
+        <div class="skill-tags">
+          <span>Information Architecture</span><span>Ecosystem Mapping</span><span>Design Systems</span>
+        </div>
+      </div>
+      <div class="skill-card" id="skill-proto">
+        <div class="skill-icon">â¬¤</div>
+        <h3 class="skill-name">Service Design</h3>
+        <p class="skill-desc">Orchestrating end-to-end journeys that bridge digital interfaces and real-world operational realities.</p>
+        <div class="skill-tags">
+          <span>Journey Mapping</span><span>Civic Tech</span><span>Process Design</span>
+        </div>
+      </div>
+      <div class="skill-card" id="skill-civic">
+        <div class="skill-icon">â–·</div>
+        <h3 class="skill-name">Rapid Prototyping</h3>
+        <p class="skill-desc">Validating complex concepts quickly with interactive, high-fidelity prototypes to test assumptions early.</p>
+        <div class="skill-tags">
+          <span>Usability Testing</span><span>Idea Validation</span><span>Interactive Flows</span>
+        </div>
+      </div>
+      <div class="skill-card" id="skill-collab">
+        <div class="skill-icon">â—‡</div>
+        <h3 class="skill-name">Cross-functional Collaboration</h3>
+        <p class="skill-desc">Bridging the gap between design, engineering, and stakeholders to ensure seamless implementation.</p>
+        <div class="skill-tags">
+          <span>Engineering Mindset</span><span>Agile Delivery</span><span>Strategic Alignment</span>
+        </div>
+      </div>
+    </div>

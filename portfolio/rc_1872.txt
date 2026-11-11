@@ -1,0 +1,29 @@
+    <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+      <div class="skill-card" style="padding: 24px; display: flex; flex-direction: column; gap: 16px;">
+        <h3 class="skill-name" style="font-size: 1.1rem; margin: 0;">UX Research</h3>
+        <p class="skill-desc" style="margin: 0; font-size: 0.95rem;">Uncovering user behavior before building.</p>
+        <div class="skill-tags" style="display: flex; gap: 8px; flex-wrap: wrap; margin: 0;">
+          <span class="chip" style="font-size: 0.75rem;">Interviews</span>
+          <span class="chip" style="font-size: 0.75rem;">Empathy</span>
+          <span class="chip" style="font-size: 0.75rem;">Testing</span>
+        </div>
+      </div>
+      <div class="skill-card" style="padding: 24px; display: flex; flex-direction: column; gap: 16px;">
+        <h3 class="skill-name" style="font-size: 1.1rem; margin: 0;">Interaction Design</h3>
+        <p class="skill-desc" style="margin: 0; font-size: 0.95rem;">Crafting intuitive, accessible interfaces.</p>
+        <div class="skill-tags" style="display: flex; gap: 8px; flex-wrap: wrap; margin: 0;">
+          <span class="chip" style="font-size: 0.75rem;">UI</span>
+          <span class="chip" style="font-size: 0.75rem;">Architecture</span>
+          <span class="chip" style="font-size: 0.75rem;">Visuals</span>
+        </div>
+      </div>
+      <div class="skill-card" style="padding: 24px; display: flex; flex-direction: column; gap: 16px;">
+        <h3 class="skill-name" style="font-size: 1.1rem; margin: 0;">Systems Thinking</h3>
+        <p class="skill-desc" style="margin: 0; font-size: 0.95rem;">Designing for scale and consistency.</p>
+        <div class="skill-tags" style="display: flex; gap: 8px; flex-wrap: wrap; margin: 0;">
+          <span class="chip" style="font-size: 0.75rem;">Scale</span>
+          <span class="chip" style="font-size: 0.75rem;">Ecosystems</span>
+          <span class="chip" style="font-size: 0.75rem;">Tokens</span>
+        </div>
+      </div>
+    </div>

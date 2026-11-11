@@ -1,0 +1,23 @@
+﻿      <div class="process-step">
+        <div class="step-num">01</div>
+        <h3 class="step-title">Discover</h3>
+        <p class="step-desc">User interviews, field research, and competitor analysis to understand the real problem.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h3 class="step-title">Define</h3>
+        <p class="step-desc">Affinity mapping, persona creation, and problem statement synthesis.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h3 class="step-title">Design</h3>
+        <p class="step-desc">Wireframes, information architecture, and high-fidelity UI with design systems.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h3 class="step-title">Deliver</h3>
+        <p class="step-desc">Interactive prototypes, usability testing, and design handoff documentation.</p>
+      </div>
